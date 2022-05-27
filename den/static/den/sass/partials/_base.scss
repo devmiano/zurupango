@@ -1,0 +1,96 @@
+@import 'mixins';
+@import 'palette';
+@import 'fonts';
+
+#app {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+	#navbrand {
+		top: 0;
+		z-index: 100;
+		height: 4rem;
+		padding: 1rem;
+		position: sticky;
+		width: fit-content;
+
+		.logo {
+			height: 4rem;
+		}
+	}
+
+	#main {
+		margin-top: -4rem;
+		width: 90%;
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+
+		#footer {
+			gap: 1rem;
+			width: 100%;
+			height: 5rem;
+			padding: 1rem;
+			margin-top: auto;
+			@include row-center;
+			background-color: $black;
+			justify-content: space-between;
+
+			.text {
+				@include text;
+				color: $ash-500;
+				font-weight: 300;
+			}
+			.copy {
+				color: $white;
+				font-size: 1.3rem;
+				@include brandtext;
+			}
+		}
+	}
+
+	#sidebar {
+		top: 0;
+		width: 10%;
+		z-index: 100;
+		height: 100vh;
+		color: $black;
+		padding: 0.5rem;
+		position: sticky;
+		align-items: center;
+		@include col-center;
+		background-color: $white;
+		justify-content: space-between;
+
+		.menu {
+			width: 100%;
+			@include col-center;
+			.text {
+				font-size: 1.7rem;
+				@include brandtext;
+			}
+
+			.icon {
+				height: 0.4rem;
+			}
+		}
+
+		.links {
+			width: 100%;
+			@include col-center;
+			.link {
+				width: 100%;
+				@include link;
+				color: $black;
+				font-size: 1.1rem;
+				@include brandtext;
+				padding: 0.4rem 0.8rem;
+
+				&:hover {
+					background-color: $ash-100;
+				}
+			}
+		}
+	}
+}

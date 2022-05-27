@@ -1,0 +1,72 @@
+@import 'fonts';
+@import 'mixins';
+@import 'palette';
+
+#hero {
+	height: 100vh;
+	overflow: hidden;
+
+	.banner {
+		width: 90%;
+		height: 100%;
+		@include image;
+		cursor: pointer;
+		position: absolute;
+		@include gray-grow;
+		background-image: url('images/hero-leopard-three.png');
+	}
+
+	.content {
+		height: 100%;
+		padding: 2rem;
+		background: $fade;
+		position: relative;
+		@include col-center;
+		justify-content: flex-end;
+
+		.title {
+			font-size: 3.2rem;
+			@include brandtext;
+		}
+	}
+}
+
+#section {
+	margin: 1rem;
+}
+
+#latest {
+	@include grid-two;
+}
+
+#cat {
+	@include link;
+
+	.wrapper {
+		overflow: hidden;
+
+		.image {
+			@include image;
+			@include gray-grow;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	.content {
+		padding: 0.5rem 0;
+
+		.top {
+			@include date;
+			color: $ash-300;
+			@include row-between;
+		}
+		.title {
+			color: $white;
+			@include subtext;
+      font-size: 2.4rem;
+		}
+	}
+}
