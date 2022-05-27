@@ -4,7 +4,7 @@ import datetime
 
 
 class Location(models.Model):
-  url = models.CharField(max_length=200)
+  url = models.CharField(max_length=48)
   title = models.CharField(max_length=200)
   
   def __str__(self):
@@ -12,9 +12,9 @@ class Location(models.Model):
   
 class Category(models.Model):
   image = models.ImageField(upload_to = 'category/')
-  url = models.CharField(max_length=200)
+  url = models.CharField(max_length=48)
+  title = models.CharField(max_length=48)
   genus = models.CharField(max_length=200)
-  title = models.CharField(max_length=200)
   caption = models.TextField(max_length=2000)
   
   def __str__(self):

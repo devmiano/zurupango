@@ -1,0 +1,31 @@
+{% extends 'den/base.html' %} {% block content %}
+<section id="hero">
+	<div class="banner">
+		<div class="content">
+			<h1 class="title">VISIT THE DEN</h1>
+		</div>
+	</div>
+</section>
+<section id="section">
+	{% if latest_cats %}
+	<div id="latest">
+		{% for cat in latest_cats %}
+		<a id="cat" href="{% url 'detail' cat.category.id cat.id %}">
+			<div class="wrapper">
+				<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
+			</div>
+			<div class="content">
+				<div class="top">
+          <p>{{cat.location.title}}</p>
+					<p>{{cat.category.title}}</p>
+				</div>
+				<h4 class="title">{{cat.title}}</h4>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+	{% else %}
+	<p>No images available</p>
+	{% endif %}
+</section>
+{% endblock %}
