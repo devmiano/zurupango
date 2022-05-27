@@ -12,7 +12,11 @@
 		/>
 		{% load static %}
 		<link href="{% static 'den/css/global.css' %}" rel="stylesheet" />
-		<title>ZuruPango</title>
+		{% if title %}
+		<title>Zuru Pango | {{title}}</title>
+		{% else %}
+		<title>Zuru Pango | Visit the Den of Africas' Big Cats</title>
+		{% endif %}
 	</head>
 	<body id="app">
 		<div id="main">
@@ -20,7 +24,7 @@
 				{% load static %}
 				<img
 					class="logo"
-					src="{% static 'den/assets/icons/logo.svg' %}"
+					src="{% static 'den/assets/icons/logo-mask.svg' %}"
 					alt="logo"
 				/>
 			</a>

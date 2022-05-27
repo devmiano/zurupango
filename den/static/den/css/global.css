@@ -49,7 +49,7 @@
 }
 
 #app #navbrand .logo {
-  height: 4rem;
+  height: 5rem;
 }
 
 #app #main {
@@ -391,9 +391,16 @@ input:-webkit-autofill:focus {
 }
 
 #hero .content .title {
+  line-height: 1.1;
   font-size: 3.2rem;
   font-family: "BebasNeue Bold", cursive;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
+}
+
+#hero .content .subtitle {
+  font-size: 1.7rem;
+  font-family: "BebasNeue Light", cursive;
+  letter-spacing: 0.2rem;
 }
 
 #section {

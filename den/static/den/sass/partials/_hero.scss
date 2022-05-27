@@ -25,8 +25,10 @@
 		justify-content: flex-end;
 
 		.title {
-			font-size: 3.2rem;
-			@include brandtext;
+			@include title;
+		}
+		.subtitle {
+			@include subtitle;
 		}
 	}
 }
@@ -66,7 +68,7 @@
 		.title {
 			color: $white;
 			@include subtext;
-      font-size: 2.4rem;
+			font-size: 2.4rem;
 		}
 	}
 }

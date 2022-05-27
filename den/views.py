@@ -12,7 +12,10 @@ def base(request):
 def index(request):
   categories = Category.objects.order_by('-url')
   latest_cats = Cat.objects.order_by('-posted')[:4]
+  title = "Visit the Den of Africas' Big Cats"
+  
   context = {
+    'title': title,
     'categories': categories,
     'latest_cats': latest_cats,
   }
