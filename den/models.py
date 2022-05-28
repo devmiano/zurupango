@@ -36,6 +36,15 @@ class Cat(models.Model):
   def recently_posted(self):
     return self.posted >= timezone.now() - datetime.timedelta(days=1)
   
+  def save_cat(self):
+    self.save()
+
+  def update_cat(self):
+    self.update()
+
+  def delete_cat(self):
+    self.delete()
+     
   def __str__(self):
     return self.title
   

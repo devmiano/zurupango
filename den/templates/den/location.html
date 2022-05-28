@@ -1,17 +1,18 @@
 {% extends 'den/base.html' %} {% block content %}
 <section id="detail">
 	<div class="shot">
-		<img class="image" src="{{category.image.url}}" alt="{{category.title}}" />
+    {% load static %}
+		<img class="image" src="{% static 'den/assets/images/hero-lion-five.png' %}" alt="location" />
 	</div>
 
 	<div class="content">
-		<h4 class="genus">{{category.genus}}</h4>
-		<h1 class="title">{{category.title}}</h1>
-		<p class="caption">{{category.caption}}</p>
+    <h4 class="genus">location</h4>
+    <h1 class="title">{{location.title}}</h1>
 	</div>
 </section>
+</section>
 <section id="section">
-	<h1 class="stitle">{{category.title}} shots</h1>
+	<h1 class="stitle">{{location.title}} shots</h1>
 	{% if cats %}
 	<div id="latest">
 		{% for cat in cats %}
@@ -21,7 +22,7 @@
 			</div>
 			<div class="content">
 				<div class="top">
-					<p>{{cat.location.title}}</p>
+          <p>{{cat.location.title}}</p>
 					<p>{{cat.category.title}}</p>
 				</div>
 				<h4 class="title">{{cat.title}}</h4>
