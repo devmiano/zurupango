@@ -3,24 +3,25 @@
 @import 'palette';
 
 #hero {
+	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 
 	.banner {
-		width: 90%;
+		width: 100%;
 		height: 100%;
-		@include image;
 		cursor: pointer;
-		position: absolute;
-		@include gray-grow;
-		animation: hero 20s infinite;
+		overflow: hidden;
+		@include hero-image;
+		@include hero-gray-grow;
+		animation: hero 18s infinite;
 		animation-direction: alternate;
 		background-image: url('images/hero-leopard.png');
 	}
 
 	.content {
 		height: 100%;
-		padding: 2rem;
+		padding: 4rem;
 		background: $fade;
 		position: relative;
 		@include col-center;

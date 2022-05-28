@@ -71,10 +71,10 @@
 }
 
 #app #main {
-  margin-top: -4rem;
-  width: 90%;
+  width: 100%;
   display: flex;
   min-height: 100vh;
+  margin-top: -4rem;
   flex-direction: column;
 }
 
@@ -110,7 +110,7 @@
 
 #app #sidebar {
   top: 0;
-  width: 10%;
+  width: 5rem;
   z-index: 100;
   height: 100vh;
   color: #000000;
@@ -410,33 +410,34 @@ input:-webkit-autofill:focus {
 }
 
 #hero {
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
 #hero .banner {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  background-size: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  cursor: pointer;
-  position: absolute;
   filter: grayscale(1);
   transition: all 0.2s ease-in-out;
-  animation: hero 20s infinite;
+  animation: hero 18s infinite;
   animation-direction: alternate;
   background-image: url("images/hero-leopard.png");
 }
 
 #hero .banner:hover {
   filter: grayscale(0);
-  background-size: 110%;
+  transform: scale(1.1);
 }
 
 #hero .content {
   height: 100%;
-  padding: 2rem;
+  padding: 4rem;
   background: linear-gradient(180deg, rgba(34, 40, 48, 0) 40.12%, rgba(0, 0, 0, 0.84) 100%);
   position: relative;
   display: flex;
