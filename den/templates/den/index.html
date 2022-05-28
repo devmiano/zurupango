@@ -9,41 +9,11 @@
 	</div>
 </section>
 <section id="section">
-	<h1 class="stitle">Latest shots</h1>
-	{% if latest_cats %}
-	<div id="latest">
-		{% for cat in latest_cats %}
-		<a href="#modal" id="cat" rel="modal:open">
-			<div class="wrapper">
-				<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
-			</div>
-			<div class="content">
-				<div class="top">
-					<p>{{cat.location.title}}</p>
-					<p>{{cat.category.title}}</p>
-				</div>
-				<h4 class="title">{{cat.title}}</h4>
-			</div>
-		</a>
-		<div id="modal" class="modal cat-modal">
-			<a id="cat" href="{% url 'detail' cat.category.url cat.id %}">
-				<div class="wrapper">
-					<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
-				</div>
-				<div class="content">
-					<div class="top">
-						<p>{{cat.location.title}}</p>
-						<p>{{cat.category.title}}</p>
-					</div>
-					<h4 class="title">{{cat.title}}</h4>
-				</div>
-			</a>
-			<a href="#" rel="modal:close">Close</a>
-		</div>
-		{% endfor %}
-	</div>
-	{% else %}
-	<p>No big cats available</p>
-	{% endif %}
+<h1 class="stitle">Latest shots</h1>
+{% if latest_cats %}
+{% include 'den/snippets/cat_modal.html' with cats=latest_cats %}
+{% else %}
+<p>No big cats available</p>
+{% endif %}
 </section>
 {% endblock %}
