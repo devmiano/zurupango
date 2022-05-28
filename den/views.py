@@ -4,7 +4,7 @@ from .models import Cat, Category, Location
 def index(request):
   categories = Category.objects.order_by('-url')
   locations = Location.objects.order_by('-url')
-  latest_cats = Cat.objects.order_by('-posted')[:4]
+  latest_cats = Cat.objects.order_by('-posted')[:8]
   title = "Visit the Den of Africas' Big Cats"
   template = 'den/index.html'
   
