@@ -616,7 +616,7 @@ input:-webkit-autofill:focus {
 #detail .content {
   height: 100%;
   padding: 2rem;
-  max-width: 40%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
