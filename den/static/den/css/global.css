@@ -582,6 +582,70 @@ input:-webkit-autofill:focus {
   }
 }
 
+.cat-modal {
+  padding: 1rem;
+  border-radius: 0px;
+  background-color: #000000;
+  box-shadow: 0px 0px 50px 0px #111418;
+}
+
+.cat-modal a.close-modal {
+  background-image: url("icons/close.svg");
+}
+
+@font-face {
+  font-family: 'BebasNeue Bold';
+  src: url("fonts/bebasneue_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Book';
+  src: url("fonts/bebasneue_book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Light';
+  src: url("fonts/bebasneue_light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Regular';
+  src: url("fonts/bebasneue_regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Thin';
+  src: url("fonts/bebasneue_thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@keyframes hero {
+  0% {
+    background-image: url("images/hero-leopard.png");
+  }
+  25% {
+    background-image: url("images/hero-lion.png");
+  }
+  50% {
+    background-image: url("images/hero-cheetah.png");
+  }
+  75% {
+    background-image: url("images/hero-lion-one.png");
+  }
+  100% {
+    background-image: url("images/hero-cheetah-one.png");
+  }
+}
+
 #detail {
   height: 100vh;
   display: flex;
