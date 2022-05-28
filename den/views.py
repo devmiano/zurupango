@@ -1,17 +1,6 @@
 from django.shortcuts import render
 from .models import Cat, Category
 
-def base(request, category):
-  categories = Category.objects.order_by('-url')
-  template = 'den/base.html'
-  
-  context = {
-    'category': category,
-    'categories': categories,
-  }
-  
-  return render(request, template, context)
-
 def index(request):
   categories = Category.objects.order_by('-url')
   latest_cats = Cat.objects.order_by('-posted')[:4]
@@ -41,6 +30,26 @@ def detail(request, category_name, cat_id ):
     'title': title,
     'categories': categories,
     'category_name': category_name
+  }
+  
+  return render(request, template, context)
+
+def category(request, category_name):
+  category = Category.objects.get(url=category_name)
+  cat = Cat.objects.filter(category_id=category.id).order_by('-posted').all()
+  categories = Category.objects.order_by('-url')
+  
+  title = f'{category.title}'
+  template = 'den/category.html'
+  
+  if category.id == cat:
+    category_name = category.url
+  
+  context = {
+    'cats': cat,
+    'title': title,
+    'category': category,
+    'categories': categories,
   }
   
   return render(request, template, context)
