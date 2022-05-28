@@ -407,6 +407,17 @@ input:-webkit-autofill:focus {
   margin: 1rem;
 }
 
+#section .stitle {
+  line-height: 1.1;
+  font-size: 3.2rem;
+  font-family: "BebasNeue Bold", cursive;
+  letter-spacing: 0.2rem;
+  margin: 4rem 0;
+  color: #222830;
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
 #latest {
   gap: 1rem;
   display: grid;

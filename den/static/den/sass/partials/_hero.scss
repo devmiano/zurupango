@@ -35,6 +35,14 @@
 
 #section {
 	margin: 1rem;
+
+	.stitle {
+		@include title;
+		margin: 4rem 0;
+		color: $ash-900;
+		font-size: 5rem;
+		line-height: 1.1;
+	}
 }
 
 #latest {
