@@ -149,11 +149,11 @@
 }
 
 @mixin gray-grow {
-	filter: grayscale(0);
+	filter: grayscale(1);
 	transition: all 0.2s ease-in-out;
 
 	&:hover {
-		filter: grayscale(1);
+		filter: grayscale(0);
 		background-size: 110%;
 	}
 }

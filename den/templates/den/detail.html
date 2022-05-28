@@ -1,11 +1,15 @@
 {% extends 'den/base.html' %} {% block content %}
 <section id="detail">
-	<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
+	<div class="shot">
+		<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
+	</div>
+
 	<div class="content">
-		<p>{{cat.title}}</p>
-		<p>{{cat.location.title}}</p>
-		<p>{{cat.caption}}</p>
-		<p>{{cat.category.genus}}</p>
+    <h4 class="genus">{{cat.category.genus}}</h4>
+		<p class="location">{{cat.location.title}}</p>
+    <h1 class="title">{{cat.title}}</h1>
+		<p class="caption">{{cat.caption}}</p>
+		
 	</div>
 </section>
 {% endblock %}

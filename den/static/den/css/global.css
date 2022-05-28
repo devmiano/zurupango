@@ -368,13 +368,13 @@ input:-webkit-autofill:focus {
   background-repeat: no-repeat;
   cursor: pointer;
   position: absolute;
-  filter: grayscale(0);
+  filter: grayscale(1);
   transition: all 0.2s ease-in-out;
   background-image: url("images/hero-leopard.png");
 }
 
 #hero .banner:hover {
-  filter: grayscale(1);
+  filter: grayscale(0);
   background-size: 110%;
 }
 
@@ -425,12 +425,12 @@ input:-webkit-autofill:focus {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(0);
+  filter: grayscale(1);
   transition: all 0.2s ease-in-out;
 }
 
 #cat .wrapper .image:hover {
-  filter: grayscale(1);
+  filter: grayscale(0);
   background-size: 110%;
 }
 
@@ -459,4 +459,118 @@ input:-webkit-autofill:focus {
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.05rem;
   font-size: 2.4rem;
+}
+
+@font-face {
+  font-family: 'BebasNeue Bold';
+  src: url("fonts/bebasneue_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Book';
+  src: url("fonts/bebasneue_book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Light';
+  src: url("fonts/bebasneue_light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Regular';
+  src: url("fonts/bebasneue_regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Thin';
+  src: url("fonts/bebasneue_thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+#detail {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#detail .shot {
+  height: 100%;
+  overflow: hidden;
+}
+
+#detail .shot .image {
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+#detail .shot .image:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+
+#detail .shot .image:hover {
+  transform: scale(1.2);
+}
+
+#detail .content {
+  height: 100%;
+  padding: 2rem;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #000000;
+  justify-content: flex-end;
+}
+
+#detail .content .genus {
+  line-height: 1.1;
+  font-size: 3.2rem;
+  font-family: "BebasNeue Bold", cursive;
+  letter-spacing: 0.2rem;
+  color: #222830;
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
+#detail .content .location {
+  font-size: 1rem;
+  font-size: 1.7rem;
+  font-family: "BebasNeue Light", cursive;
+  letter-spacing: 0.2rem;
+  margin-bottom: 5rem;
+}
+
+#detail .content .title {
+  line-height: 1.1;
+  font-size: 3.2rem;
+  font-family: "BebasNeue Bold", cursive;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 0;
+  font-size: 1.7rem;
+}
+
+#detail .content .caption {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.05rem;
+  color: #dbdfe6;
+  font-weight: 300;
 }

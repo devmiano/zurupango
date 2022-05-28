@@ -1,0 +1,54 @@
+@import 'fonts';
+@import 'mixins';
+@import 'palette';
+
+#detail {
+	height: 100vh;
+	@include row-center;
+
+	.shot {
+		height: 100%;
+		overflow: hidden;
+
+		.image {
+			height: 100%;
+			@include image;
+			@include gray-grow;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	.content {
+		height: 100%;
+		padding: 2rem;
+    max-width: 40%;
+		@include col-start;
+		background-color: $black;
+		justify-content: flex-end;
+
+		.genus {
+			@include title;
+			color: $ash-900;
+			font-size: 5rem;
+			line-height: 1.1;
+		}
+		.location {
+			font-size: 1rem;
+			@include subtitle;
+			margin-bottom: 5rem;
+		}
+		.title {
+			@include title;
+			margin: 0.5rem 0;
+			font-size: 1.7rem;
+		}
+		.caption {
+			@include text;
+			color: $ash-200;
+			font-weight: 300;
+		}
+	}
+}
