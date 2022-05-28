@@ -12,7 +12,7 @@
 	{% if latest_cats %}
 	<div id="latest">
 		{% for cat in latest_cats %}
-		<a id="cat" href="{% url 'detail' cat.category.id cat.id %}">
+		<a id="cat" href="{% url 'detail' cat.category.url cat.id %}">
 			<div class="wrapper">
 				<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
 			</div>
