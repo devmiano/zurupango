@@ -14,7 +14,7 @@
 <section id="section">
 	<h1 class="stitle">{{location.title}} shots</h1>
 	{% if cats %}
-	{% include 'den/snippets/cat_modal.html' with cats=cats %}
+	{% include 'den/cats.html' with cats=cats %}
 	{% else %}
 	<p>No big cats available</p>
 	{% endif %}

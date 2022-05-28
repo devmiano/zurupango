@@ -1,6 +1,6 @@
 <div id="latest">
 	{% for cat in cats %}
-	<a href="#modal" id="cat" rel="modal:open">
+	<a href="#{{cat.id}}" id="cat" rel="modal:open">
 		<div class="wrapper">
 			<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
 		</div>
@@ -12,7 +12,7 @@
 			<h4 class="title">{{cat.title}}</h4>
 		</div>
 	</a>
-	<div id="modal" class="modal cat-modal">
+	<div id="{{cat.id}}" class="modal cat-modal">
 		<a id="cat" href="{% url 'detail' cat.category.url cat.id %}">
 			<div class="wrapper">
 				<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
