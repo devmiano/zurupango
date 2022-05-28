@@ -448,7 +448,7 @@ input:-webkit-autofill:focus {
 }
 
 #hero .content .title {
-  line-height: 1.1;
+  line-height: 1;
   font-size: 3.2rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.2rem;
@@ -465,12 +465,12 @@ input:-webkit-autofill:focus {
 }
 
 #section .stitle {
-  line-height: 1.1;
+  color: #ffffff;
+  line-height: 1;
   font-size: 3.2rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.2rem;
   margin: 4rem 0;
-  color: #222830;
   font-size: 5rem;
   line-height: 1.1;
 }
@@ -507,13 +507,10 @@ input:-webkit-autofill:focus {
 }
 
 #cat .content {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
 }
 
 #cat .content .top {
-  font-weight: 300;
-  font-size: 0.7rem;
-  font-family: "Lato", sans-serif;
   color: #abb5c4;
   display: flex;
   align-items: center;
@@ -521,12 +518,68 @@ input:-webkit-autofill:focus {
   justify-content: space-between;
 }
 
+#cat .content .top .location {
+  font-size: 1.7rem;
+  font-family: "BebasNeue Light", cursive;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  font-family: "BebasNeue Book", cursive;
+}
+
+#cat .content .top .category {
+  font-weight: 300;
+  font-size: 0.7rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#cat .content .top .link {
+  text-decoration: none;
+}
+
 #cat .content .title {
   color: #ffffff;
+  line-height: 1;
   font-size: 1.3rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.05rem;
   font-size: 2.4rem;
+}
+
+#cta {
+  margin-top: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#cta .share {
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 0.7rem 1.3rem;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+
+#cta .close {
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 0.7rem 1.3rem;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  text-align: center;
 }
 
 @font-face {
@@ -690,7 +743,7 @@ input:-webkit-autofill:focus {
 }
 
 #detail .content .genus {
-  line-height: 1.1;
+  line-height: 1;
   font-size: 3.2rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.2rem;
@@ -708,7 +761,7 @@ input:-webkit-autofill:focus {
 }
 
 #detail .content .title {
-  line-height: 1.1;
+  line-height: 1;
   font-size: 3.2rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.2rem;

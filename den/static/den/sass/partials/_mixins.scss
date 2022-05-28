@@ -55,7 +55,7 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 @mixin title {
-	line-height: 1.1;
+	line-height: 1;
 	font-size: 3.2rem;
 	font-family: $bold;
 	letter-spacing: 0.2rem;
@@ -68,6 +68,7 @@
 }
 
 @mixin subtext {
+	line-height: 1;
 	font-size: 1.3rem;
 	font-family: $bold;
 	letter-spacing: 0.05rem;
@@ -129,6 +130,7 @@
 	outline: none;
 	cursor: pointer;
 	font-size: 0.8rem;
+	text-decoration: none;
 	padding: 0.7rem 1.3rem;
 	letter-spacing: 0.2rem;
 	background: transparent;

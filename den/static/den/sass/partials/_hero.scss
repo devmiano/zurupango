@@ -40,9 +40,9 @@
 	margin: 1rem;
 
 	.stitle {
+		color: $white;
 		@include title;
 		margin: 4rem 0;
-		color: $ash-900;
 		font-size: 5rem;
 		line-height: 1.1;
 	}
@@ -69,17 +69,45 @@
 	}
 
 	.content {
-		padding: 0.5rem 0;
+		padding: 0.8rem 0;
 
 		.top {
-			@include date;
 			color: $ash-300;
 			@include row-between;
+
+			.location {
+				@include subtitle;
+				font-size: 1rem;
+				font-family: $book;
+			}
+			.category {
+				@include date;
+				font-size: 1rem;
+				font-weight: 300;
+			}
+			.link {
+				@include link;
+			}
 		}
+
 		.title {
 			color: $white;
 			@include subtext;
 			font-size: 2.4rem;
 		}
+	}
+}
+
+#cta {
+	margin-top: 1rem;
+	@include grid-two;
+
+	.share {
+		@include btn-alt;
+		text-align: center;
+	}
+	.close {
+		@include btn-alt;
+		text-align: center;
 	}
 }

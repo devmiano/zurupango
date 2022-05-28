@@ -6,8 +6,8 @@
 		</div>
 		<div class="content">
 			<div class="top">
-				<p>{{cat.location.title}}</p>
-				<p>{{cat.category.title}}</p>
+				<p class="location">{{cat.location.title}}</p>
+				<p class="category">{{cat.category.title}}</p>
 			</div>
 			<h4 class="title">{{cat.title}}</h4>
 		</div>
@@ -19,14 +19,16 @@
 			</div>
 			<div class="content">
 				<div class="top">
-					<p>{{cat.location.title}}</p>
-					<p>{{cat.category.title}}</p>
+					<p class="location">{{cat.location.title}}</p>
+					<p class="category">{{cat.category.title}}</p>
 				</div>
 				<h4 class="title">{{cat.title}}</h4>
 			</div>
 		</a>
-		<a href="#" rel="modal:close">Close</a>
+		<div id="cta">
+			<a class="share" href="{% url 'detail' cat.category.url cat.id %}">Details</a>
+			<a class="close" href="#" rel="modal:close">Close</a>
+		</div>
 	</div>
 	{% endfor %}
 </div>
-
