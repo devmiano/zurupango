@@ -1,3 +1,21 @@
+@keyframes hero {
+  0% {
+    background-image: url("images/hero-leopard.png");
+  }
+  25% {
+    background-image: url("images/hero-lion.png");
+  }
+  50% {
+    background-image: url("images/hero-cheetah.png");
+  }
+  75% {
+    background-image: url("images/hero-lion-one.png");
+  }
+  100% {
+    background-image: url("images/hero-cheetah-one.png");
+  }
+}
+
 @font-face {
   font-family: 'BebasNeue Bold';
   src: url("fonts/bebasneue_bold.ttf") format("truetype");
@@ -320,6 +338,24 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
+@keyframes hero {
+  0% {
+    background-image: url("images/hero-leopard.png");
+  }
+  25% {
+    background-image: url("images/hero-lion.png");
+  }
+  50% {
+    background-image: url("images/hero-cheetah.png");
+  }
+  75% {
+    background-image: url("images/hero-lion-one.png");
+  }
+  100% {
+    background-image: url("images/hero-cheetah-one.png");
+  }
+}
+
 @font-face {
   font-family: 'BebasNeue Bold';
   src: url("fonts/bebasneue_bold.ttf") format("truetype");
@@ -355,6 +391,24 @@ input:-webkit-autofill:focus {
   font-style: normal;
 }
 
+@keyframes hero {
+  0% {
+    background-image: url("images/hero-leopard.png");
+  }
+  25% {
+    background-image: url("images/hero-lion.png");
+  }
+  50% {
+    background-image: url("images/hero-cheetah.png");
+  }
+  75% {
+    background-image: url("images/hero-lion-one.png");
+  }
+  100% {
+    background-image: url("images/hero-cheetah-one.png");
+  }
+}
+
 #hero {
   height: 100vh;
   overflow: hidden;
@@ -370,6 +424,8 @@ input:-webkit-autofill:focus {
   position: absolute;
   filter: grayscale(1);
   transition: all 0.2s ease-in-out;
+  animation: hero 20s infinite;
+  animation-direction: alternate;
   background-image: url("images/hero-leopard.png");
 }
 
@@ -505,6 +561,24 @@ input:-webkit-autofill:focus {
   src: url("fonts/bebasneue_thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
+}
+
+@keyframes hero {
+  0% {
+    background-image: url("images/hero-leopard.png");
+  }
+  25% {
+    background-image: url("images/hero-lion.png");
+  }
+  50% {
+    background-image: url("images/hero-cheetah.png");
+  }
+  75% {
+    background-image: url("images/hero-lion-one.png");
+  }
+  100% {
+    background-image: url("images/hero-cheetah-one.png");
+  }
 }
 
 #detail {

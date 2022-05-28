@@ -157,3 +157,21 @@
 		background-size: 110%;
 	}
 }
+
+@keyframes hero {
+	0% {
+		background-image: url('images/hero-leopard.png');
+	}
+	25% {
+		background-image: url('images/hero-lion.png');
+	}
+	50% {
+		background-image: url('images/hero-cheetah.png');
+	}
+	75% {
+		background-image: url('images/hero-lion-one.png');
+	}
+	100% {
+		background-image: url('images/hero-cheetah-one.png');
+	}
+}

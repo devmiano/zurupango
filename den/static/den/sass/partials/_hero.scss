@@ -13,6 +13,8 @@
 		cursor: pointer;
 		position: absolute;
 		@include gray-grow;
+		animation: hero 20s infinite;
+		animation-direction: alternate;
 		background-image: url('images/hero-leopard.png');
 	}
 
