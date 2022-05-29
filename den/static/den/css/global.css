@@ -114,6 +114,7 @@
   z-index: 100;
   height: 100vh;
   color: #000000;
+  cursor: pointer;
   padding: 0.5rem;
   position: sticky;
   align-items: center;
@@ -122,7 +123,13 @@
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
+  transition-duration: 0.8s;
+  transition-property: width;
   justify-content: space-between;
+}
+
+#app #sidebar:hover {
+  width: 10rem;
 }
 
 #app #sidebar .menu {
@@ -144,6 +151,10 @@
 }
 
 #app #sidebar .links {
+  display: none;
+}
+
+#app #sidebar:hover .links {
   width: 100%;
   display: flex;
   align-items: center;
@@ -151,7 +162,7 @@
   justify-content: center;
 }
 
-#app #sidebar .links .link {
+#app #sidebar:hover .links .link {
   width: 100%;
   text-decoration: none;
   color: #000000;
@@ -161,7 +172,7 @@
   padding: 0.4rem 0.8rem;
 }
 
-#app #sidebar .links .link:hover {
+#app #sidebar:hover .links .link:hover {
   background-color: #f3f4f7;
 }
 
@@ -644,6 +655,59 @@ input:-webkit-autofill:focus {
 
 .cat-modal a.close-modal {
   background-image: url("icons/close.svg");
+}
+
+@font-face {
+  font-family: 'BebasNeue Bold';
+  src: url("fonts/bebasneue_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Book';
+  src: url("fonts/bebasneue_book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Light';
+  src: url("fonts/bebasneue_light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Regular';
+  src: url("fonts/bebasneue_regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Thin';
+  src: url("fonts/bebasneue_thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@keyframes hero {
+  0% {
+    background-image: url("images/hero-leopard.png");
+  }
+  25% {
+    background-image: url("images/hero-lion.png");
+  }
+  50% {
+    background-image: url("images/hero-cheetah.png");
+  }
+  75% {
+    background-image: url("images/hero-lion-one.png");
+  }
+  100% {
+    background-image: url("images/hero-cheetah-one.png");
+  }
 }
 
 @font-face {
