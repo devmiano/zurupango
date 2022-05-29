@@ -69,8 +69,12 @@
 					alt="menu"
 				/>
 			</div>
+			<div class="links">
+				<a class='link' href="{% url 'locations' %}">Locations</a>
+			</div>
+			
 			<form class="search" action="{% url 'search' %}" role="search">
-				<input class="input" type="text" name="search" id="search">
+				<input class="input" type="text" name="search" id="search" placeholder="Search..." autocomplete="off">
 				<button class="submit" type="submit">search</button>
 			</form>
 			{% if categories %}

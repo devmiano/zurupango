@@ -1,0 +1,17 @@
+{% extends 'den/base.html' %} {% block content %}
+<section id="section">
+	<h1 class="stitle">Locations</h1>
+	{% if locations %}
+	<div id="location">
+		{% for location in locations %}
+		<a href="{% url 'location' location.url %}" class="link">
+			<h1 class="title">{{location.title}}</h1>
+		</a>
+		{% endfor %}
+	</div>
+
+	{% else %}
+	<p>No locations available</p>
+	{% endif %}
+</section>
+{% endblock %}

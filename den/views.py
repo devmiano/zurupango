@@ -60,6 +60,20 @@ def category(request, category_name):
   
   return render(request, template, context)
 
+def locations(request):
+  locations = Location.objects.order_by('-url')
+  categories = Category.objects.order_by('-url')
+  title = 'Locations'
+  template = 'den/locations.html'
+  
+  context = {
+    'title': title,
+    'locations': locations,
+    'categories': categories,
+  }
+  
+  return render(request, template, context)
+
 def location(request, location_name):
   location = Location.objects.get(url=location_name)
   cats_by_location = Cat.objects.filter(location_id=location.id).order_by('-posted')
@@ -102,15 +116,13 @@ def search(request):
     return render(request, template, context)
   
   else:
-    message = 'No Search Results'
+    title = 'No Big Cat'
+    template = 'den/search.html'
     
     context = {
-    'message': message,
+    'title': title,
     'locations': locations,
     'categories': categories,
     }
-    
-    template = 'den/search.html'
-    
     
     return render(request, template, context)

@@ -125,7 +125,7 @@
   background-color: #ffffff;
   transition-duration: 0.8s;
   transition-property: width;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 #app #sidebar:hover {
@@ -134,9 +134,10 @@
 
 #app #sidebar .menu {
   width: 100%;
+  padding: 0.5rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -167,6 +168,20 @@
   justify-content: center;
 }
 
+#app #sidebar:hover .search .url {
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1rem;
+  font-family: "BebasNeue Bold", cursive;
+  letter-spacing: 0.1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+#app #sidebar:hover .search .url:hover {
+  background-color: #f3f4f7;
+}
+
 #app #sidebar:hover .search .input {
   width: 100%;
   outline: none;
@@ -176,6 +191,7 @@
   padding: 0.4rem 0.8rem;
   background: transparent;
   border: 2px solid #000000;
+  font-size: 0.8rem;
 }
 
 #app #sidebar:hover .search .input::placeholder {
@@ -210,6 +226,7 @@
   padding: 0.4rem 0.8rem;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 0.8rem;
 }
 
 #app #sidebar:hover .links {
@@ -782,6 +799,27 @@ input:-webkit-autofill:focus {
   font-size: 3.2rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.2rem;
+}
+
+#location {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+}
+
+#location .link {
+  text-decoration: none;
+  height: 10rem;
+}
+
+#location .link .title {
+  text-decoration: none;
+  line-height: 1;
+  font-size: 3.2rem;
+  font-family: "BebasNeue Bold", cursive;
+  letter-spacing: 0.2rem;
+  color: #7c8ca2;
 }
 
 @font-face {

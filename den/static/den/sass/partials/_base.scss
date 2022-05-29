@@ -64,7 +64,7 @@
 		background-color: $white;
 		transition-duration: 0.8s;
 		transition-property: width;
-		justify-content: space-between;
+		justify-content: flex-start;
 
 		&:hover {
 			width: 10rem;
@@ -72,7 +72,9 @@
 
 		.menu {
 			width: 100%;
-			@include col-center;
+			padding: 0.5rem;
+			@include col-start;
+
 			.text {
 				font-size: 1.7rem;
 				@include brandtext;
@@ -96,15 +98,30 @@
 			padding: 0.5rem;
 			@include col-center;
 
+			.url {
+				width: 100%;
+				@include link;
+				color: $black;
+				font-size: 1.1rem;
+				@include brandtext;
+				padding: 0.4rem 0.8rem;
+
+				&:hover {
+					background-color: $ash-100;
+				}
+			}
+
 			.input {
 				width: 100%;
 				@include input;
+				font-size: 0.8rem;
 			}
 
 			.submit {
 				width: 100%;
 				@include btn;
 				font-weight: 300;
+				font-size: 0.8rem;
 			}
 		}
 
