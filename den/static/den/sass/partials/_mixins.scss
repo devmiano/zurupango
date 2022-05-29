@@ -90,27 +90,27 @@
 }
 @mixin input {
 	outline: none;
-	color: $white;
+	color: $black;
 	font-size: 1rem;
-	padding: 0.7rem;
 	margin: 0.5rem 0;
+	padding: 0.4rem 0.8rem;
 	background: transparent;
-	border: 2px solid $white;
+	border: 2px solid $black;
 
 	&::placeholder {
-		color: $alt-100;
+		color: $black;
 		background: transparent;
 	}
 	&:focus {
-		color: $alt-100;
+		color: $black;
 		background: transparent;
 	}
 	&:active {
-		color: $alt-100;
+		color: $black;
 		background: transparent;
 	}
 	&:focus-visible {
-		color: $alt-100;
+		color: $black;
 		background: transparent;
 	}
 }
@@ -118,11 +118,12 @@
 @mixin btn {
 	border: none;
 	outline: none;
-	color: $black;
+	color: $white;
 	cursor: pointer;
-	background: $white;
-	padding: 1rem 2rem;
-	border-radius: 0.2rem;
+	background: $black;
+	border-radius: 0rem;
+	letter-spacing: 0.1rem;
+	padding: 0.4rem 0.8rem;
 	text-transform: uppercase;
 }
 @mixin btn-alt {
@@ -131,7 +132,7 @@
 	cursor: pointer;
 	font-size: 0.8rem;
 	text-decoration: none;
-	padding: 0.7rem 1.3rem;
+	padding: 0.7rem 1rem;
 	letter-spacing: 0.2rem;
 	background: transparent;
 	text-transform: uppercase;
@@ -170,7 +171,7 @@
 
 	&:hover {
 		filter: grayscale(0);
-		transform: scale(1.1)
+		transform: scale(1.1);
 	}
 }
 

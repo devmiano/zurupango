@@ -44,6 +44,11 @@ class Cat(models.Model):
 
   def delete_cat(self):
     self.delete()
+    
+  @classmethod
+  def search_by_category(cls, search_term):
+    cats = cls.objects.filter(category__title__icontains=search_term)
+    return cats
      
   def __str__(self):
     return self.title

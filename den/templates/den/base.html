@@ -69,6 +69,10 @@
 					alt="menu"
 				/>
 			</div>
+			<form class="search" action="{% url 'search' %}" role="search">
+				<input class="input" type="text" name="search" id="search">
+				<button class="submit" type="submit">search</button>
+			</form>
 			{% if categories %}
 			<div class="links">
 				{% for category in categories %}
@@ -80,7 +84,6 @@
 			{% else %}
 			<div class="links">
 				<p>No category available</p>
-				<a href="/admin" class="link">Create a category</a>
 			</div>
 			{% endif %}
 		</div>

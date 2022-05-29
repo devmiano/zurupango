@@ -154,6 +154,64 @@
   display: none;
 }
 
+#app #sidebar .search {
+  display: none;
+}
+
+#app #sidebar:hover .search {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#app #sidebar:hover .search .input {
+  width: 100%;
+  outline: none;
+  color: #000000;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding: 0.4rem 0.8rem;
+  background: transparent;
+  border: 2px solid #000000;
+}
+
+#app #sidebar:hover .search .input::placeholder {
+  color: #000000;
+  background: transparent;
+}
+
+#app #sidebar:hover .search .input:focus {
+  color: #000000;
+  background: transparent;
+}
+
+#app #sidebar:hover .search .input:active {
+  color: #000000;
+  background: transparent;
+}
+
+#app #sidebar:hover .search .input:focus-visible {
+  color: #000000;
+  background: transparent;
+}
+
+#app #sidebar:hover .search .submit {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  background: #000000;
+  border-radius: 0rem;
+  letter-spacing: 0.1rem;
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 #app #sidebar:hover .links {
   width: 100%;
   display: flex;
@@ -571,7 +629,7 @@ input:-webkit-autofill:focus {
   cursor: pointer;
   font-size: 0.8rem;
   text-decoration: none;
-  padding: 0.7rem 1.3rem;
+  padding: 0.7rem 1rem;
   letter-spacing: 0.2rem;
   background: transparent;
   text-transform: uppercase;
@@ -585,7 +643,7 @@ input:-webkit-autofill:focus {
   cursor: pointer;
   font-size: 0.8rem;
   text-decoration: none;
-  padding: 0.7rem 1.3rem;
+  padding: 0.7rem 1rem;
   letter-spacing: 0.2rem;
   background: transparent;
   text-transform: uppercase;
@@ -657,6 +715,24 @@ input:-webkit-autofill:focus {
   background-image: url("icons/close.svg");
 }
 
+@keyframes hero {
+  0% {
+    background-image: url("images/hero-leopard.png");
+  }
+  25% {
+    background-image: url("images/hero-lion.png");
+  }
+  50% {
+    background-image: url("images/hero-cheetah.png");
+  }
+  75% {
+    background-image: url("images/hero-lion-one.png");
+  }
+  100% {
+    background-image: url("images/hero-cheetah-one.png");
+  }
+}
+
 @font-face {
   font-family: 'BebasNeue Bold';
   src: url("fonts/bebasneue_bold.ttf") format("truetype");
@@ -692,22 +768,20 @@ input:-webkit-autofill:focus {
   font-style: normal;
 }
 
-@keyframes hero {
-  0% {
-    background-image: url("images/hero-leopard.png");
-  }
-  25% {
-    background-image: url("images/hero-lion.png");
-  }
-  50% {
-    background-image: url("images/hero-cheetah.png");
-  }
-  75% {
-    background-image: url("images/hero-lion-one.png");
-  }
-  100% {
-    background-image: url("images/hero-cheetah-one.png");
-  }
+.results {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.results .message {
+  line-height: 1;
+  font-size: 3.2rem;
+  font-family: "BebasNeue Bold", cursive;
+  letter-spacing: 0.2rem;
 }
 
 @font-face {
@@ -840,6 +914,7 @@ input:-webkit-autofill:focus {
   letter-spacing: 0.05rem;
   color: #dbdfe6;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .none {

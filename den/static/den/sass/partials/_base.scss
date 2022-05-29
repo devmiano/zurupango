@@ -87,6 +87,27 @@
 			display: none;
 		}
 
+		.search {
+			display: none;
+		}
+
+		&:hover .search {
+			width: 100%;
+			padding: 0.5rem;
+			@include col-center;
+
+			.input {
+				width: 100%;
+				@include input;
+			}
+
+			.submit {
+				width: 100%;
+				@include btn;
+				font-weight: 300;
+			}
+		}
+
 		&:hover .links {
 			width: 100%;
 			@include col-center;

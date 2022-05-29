@@ -82,3 +82,35 @@ def location(request, location_name):
   
   return render(request, template, context)
 
+def search(request):
+  locations = Location.objects.order_by('-url')
+  categories = Category.objects.order_by('-url')
+  
+  if 'search' in request.GET and request.GET['search']:
+    search_term = request.GET['search']
+    searched_cats = Cat.search_by_category(search_term)
+    title = f'{search_term}'
+    template = 'den/search.html'
+    
+    context = {
+    'title': title,
+    'locations': locations,
+    'categories': categories,
+    'searched_cats': searched_cats
+    }
+    
+    return render(request, template, context)
+  
+  else:
+    message = 'No Search Results'
+    
+    context = {
+    'message': message,
+    'locations': locations,
+    'categories': categories,
+    }
+    
+    template = 'den/search.html'
+    
+    
+    return render(request, template, context)
