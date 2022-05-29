@@ -5,11 +5,15 @@
 	</div>
 
 	<div class="content">
-    <h4 class="genus">{{cat.category.genus}}</h4>
+		<h4 class="genus">{{cat.category.genus}}</h4>
 		<p class="location">{{cat.location.title}}</p>
-    <h1 class="title">{{cat.title}}</h1>
+		<h1 class="title">{{cat.title}}</h1>
 		<p class="caption">{{cat.caption}}</p>
-		
+		<p id="share" style="display:none;">http://127.0.0.1:8000{% url 'detail' cat.category.url cat.id %}</p>
+		<div id="cta">
+			<button id='copyLink' onclick="share('share')" class="share">Copy Link</button>
+			<a class="close" href="{% url 'category' cat.category.url %}" >Go to category</a>
+		</div>
 	</div>
 </section>
 {% endblock %}

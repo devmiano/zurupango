@@ -24,7 +24,7 @@
 	.content {
 		height: 100%;
 		padding: 2rem;
-    width: 40%;
+		width: 40%;
 		@include col-start;
 		background-color: $black;
 		justify-content: flex-end;
@@ -51,4 +51,8 @@
 			font-weight: 300;
 		}
 	}
+}
+
+.none {
+	display: none;
 }

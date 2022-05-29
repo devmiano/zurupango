@@ -21,6 +21,17 @@
 
 		<!-- jQuery Modal -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+		<script>
+			function share(elementId) {
+				var aux = document.createElement('input');
+				aux.setAttribute('value', document.getElementById(elementId).innerHTML);
+				document.body.appendChild(aux);
+				aux.select();
+				document.execCommand('copy');
+				document.body.removeChild(aux);
+			}
+		</script>
 		<!-- Local CSS -->
 		{% load static %}
 		<link href="{% static 'den/css/global.css' %}" rel="stylesheet" />

@@ -777,3 +777,7 @@ input:-webkit-autofill:focus {
   color: #dbdfe6;
   font-weight: 300;
 }
+
+.none {
+  display: none;
+}
