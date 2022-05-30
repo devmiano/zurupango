@@ -40,17 +40,27 @@
 
 			.text {
 				@include text;
+				padding: 1rem;
 				color: $ash-500;
 				font-weight: 300;
-				padding: 0.5rem;
 				text-align: center;
+
+				@include for-tab {
+					padding: 0.5rem 1rem;
+				}
 			}
+
 			.copy {
 				color: $white;
+				padding: 1rem;
+				line-height: 1;
 				font-size: 1.3rem;
 				@include brandtext;
-				padding: 0.5rem;
 				text-align: center;
+
+				@include for-tab {
+					padding: 0.5rem 1rem;
+				}
 			}
 		}
 	}

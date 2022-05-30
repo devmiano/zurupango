@@ -102,19 +102,32 @@
   font-weight: 400;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.05rem;
+  padding: 1rem;
   color: #7c8ca2;
   font-weight: 300;
-  padding: 0.5rem;
   text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #app #main #footer .text {
+    padding: 0.5rem 1rem;
+  }
 }
 
 #app #main #footer .copy {
   color: #ffffff;
+  padding: 1rem;
+  line-height: 1;
   font-size: 1.3rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.1rem;
-  padding: 0.5rem;
   text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #app #main #footer .copy {
+    padding: 0.5rem 1rem;
+  }
 }
 
 #app #sidebar {
@@ -200,6 +213,7 @@
   padding: 0.4rem 0.8rem;
   background: transparent;
   border: 2px solid #000000;
+  text-transform: uppercase;
   font-size: 0.8rem;
 }
 
@@ -236,6 +250,12 @@
   text-transform: uppercase;
   font-weight: 300;
   font-size: 0.8rem;
+}
+
+#app #sidebar:hover .search .submit:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 2px solid #000000;
 }
 
 #app #sidebar:hover .links {
@@ -684,6 +704,11 @@ input:-webkit-autofill:focus {
   text-align: center;
 }
 
+#cta .share:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
 #cta .close {
   color: #ffffff;
   outline: none;
@@ -696,6 +721,11 @@ input:-webkit-autofill:focus {
   text-transform: uppercase;
   border: 2px solid #ffffff;
   text-align: center;
+}
+
+#cta .close:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 @font-face {
@@ -932,6 +962,7 @@ input:-webkit-autofill:focus {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   #detail .shot {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -1040,6 +1071,11 @@ input:-webkit-autofill:focus {
   text-align: center;
 }
 
+#detail-cta .share:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
 #detail-cta .close {
   color: #ffffff;
   outline: none;
@@ -1052,6 +1088,11 @@ input:-webkit-autofill:focus {
   text-transform: uppercase;
   border: 2px solid #ffffff;
   text-align: center;
+}
+
+#detail-cta .close:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 #detail-cta .date {

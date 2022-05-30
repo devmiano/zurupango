@@ -96,6 +96,7 @@
 	padding: 0.4rem 0.8rem;
 	background: transparent;
 	border: 2px solid $black;
+	text-transform: uppercase;
 
 	&::placeholder {
 		color: $black;
@@ -125,6 +126,12 @@
 	letter-spacing: 0.1rem;
 	padding: 0.4rem 0.8rem;
 	text-transform: uppercase;
+
+	&:hover {
+		color: $black;
+		background: $white;
+		border: 2px solid $black;
+	}
 }
 @mixin btn-alt {
 	color: $white;
@@ -137,6 +144,11 @@
 	background: transparent;
 	text-transform: uppercase;
 	border: 2px solid $white;
+
+	&:hover {
+		color: $black;
+		background: $white;
+	}
 }
 
 @mixin image {
@@ -197,14 +209,14 @@
 
 // Tablet
 @mixin for-tab {
-  @media screen and (min-width: 0px) and(max-width: 768px) {
-    @content;
-  }
+	@media screen and (min-width: 0px) and(max-width: 768px) {
+		@content;
+	}
 }
 
 // Desktop
 @mixin for-desktop {
-  @media screen and (min-width: 769px) and (max-width: 4000px) {
-    @content;
-  }
+	@media screen and (min-width: 769px) and (max-width: 4000px) {
+		@content;
+	}
 }
