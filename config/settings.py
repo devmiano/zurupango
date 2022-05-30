@@ -21,7 +21,7 @@ DISABLE_COLLECTSTATIC=1
 
 INSTALLED_APPS = [
     'django_sass',
-    'den.apps.DenConfig',
+    'den',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,7 +50,6 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.media',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
