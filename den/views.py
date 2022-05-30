@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from .models import Cat, Category, Location
+from django.utils import timezone
+import datetime
+
 
 def index(request):
   categories = Category.objects.order_by('-url')

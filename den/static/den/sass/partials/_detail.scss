@@ -57,3 +57,32 @@
 .none {
 	display: none;
 }
+
+#detail-cta {
+	margin-top: 1rem;
+	@include grid-three;
+
+	.share {
+		@include btn-alt;
+		text-align: center;
+	}
+	.close {
+		@include btn-alt;
+		text-align: center;
+	}
+
+	.date {
+		@include text;
+		color: $ash-200;
+		font-weight: 300;
+	}
+}
+
+// element.style {
+//     visibility: visible;
+//     transform: translate(1480px, 356px);
+// }
+
+
+
+

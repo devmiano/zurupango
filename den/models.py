@@ -39,9 +39,6 @@ class Cat(models.Model):
   category = models.ForeignKey(Category, on_delete=models.CASCADE)
   location = models.ForeignKey(Location, on_delete=models.CASCADE)
   
-  def recently_posted(self):
-    return self.posted >= timezone.now() - datetime.timedelta(days=1)
-  
   def save_cat(self):
     self.save()
     

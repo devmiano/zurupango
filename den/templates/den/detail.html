@@ -10,9 +10,10 @@
 		<h1 class="title">{{cat.title}}</h1>
 		<p class="caption">{{cat.caption}}</p>
 		<p id="share" style="display:none;">http://127.0.0.1:8000{% url 'detail' cat.category.url cat.id %}</p>
-		<div id="cta">
+		<div id="detail-cta">
 			<button id='copyLink' onclick="share('share')" class="share">Copy Link</button>
 			<a class="close" href="{% url 'category' cat.category.url %}" >{{cat.category.title}}</a>
+			<p class="date">{{cat.posted | date:"jS M Y"}}</p>
 		</div>
 	</div>
 </section>
