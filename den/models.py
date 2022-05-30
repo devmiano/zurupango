@@ -9,12 +9,6 @@ class Location(models.Model):
   
   def save_location(self):
       self.save()
-
-  def update_location(self):
-    self.update()
-
-  def delete_location(self):
-    self.delete()
   
   def __str__(self):
     return self.title
@@ -28,12 +22,6 @@ class Category(models.Model):
   
   def save_category(self):
       self.save()
-
-  def update_category(self):
-    self.update()
-
-  def delete_category(self):
-    self.delete()
   
   def __str__(self):
     return self.title
@@ -56,12 +44,6 @@ class Cat(models.Model):
   
   def save_cat(self):
     self.save()
-
-  def update_cat(self):
-    self.update()
-
-  def delete_cat(self):
-    self.delete()
     
   @classmethod
   def search_by_category(cls, search_term):
