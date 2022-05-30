@@ -78,9 +78,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # }
 
 DATABASES = {
-    'default': {
-        dj_database_url.config(default='postgres://postgres:devmiano@localhost/zurupango')
-    }
+    'default': dj_database_url.config(default='postgres://postgres:devmiano@localhost/zurupango')
 }
 
 
