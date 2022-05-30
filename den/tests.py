@@ -8,6 +8,11 @@ class LocationTestCase(TestCase):
   def test_instance(self):
     self.assertTrue(isinstance(self.mali, Location))
     
+  def test_save_location(self):
+    self.mali.save_location()
+    locations = Location.objects.all()
+    self.assertTrue(len(locations) > 0)
+    
 class CategoryTestCase(TestCase):
   def setUp(self):
     self.tiger = Category(image='category/tiger.png', url='tigers', title='Tiger', genus='Panthera tigris', caption='New Tiger')
