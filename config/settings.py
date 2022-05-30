@@ -1,10 +1,9 @@
 import os
 import dj_database_url
-from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
+# # Build paths inside the project like this: BASE_DIR / 'subdir'.
+# BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -16,7 +15,7 @@ SECRET_KEY = 'django-insecure-87bu7pf_13t!%x^&_v-z(^75#2m!lw49dm*4g6fxhp$fe%qlfv
 DEBUG = False
 
 ALLOWED_HOSTS = ['zurupango.herokuapp.com']
-
+DISABLE_COLLECTSTATIC=1
 
 # Application definition
 
@@ -107,6 +106,8 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Africa/Nairobi'
 
+USE_L10N = True
+
 USE_I18N = True
 
 USE_TZ = True
@@ -117,8 +118,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_FILES_DIRS = [os.path.join(BASE_DIR, 'static')],
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
