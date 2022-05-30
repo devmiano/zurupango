@@ -79,17 +79,22 @@
 }
 
 #app #main #footer {
-  gap: 1rem;
+  gap: 0.5rem;
   width: 100%;
-  height: 5rem;
-  padding: 1rem;
   margin-top: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
-  justify-content: space-between;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #app #main #footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+  }
 }
 
 #app #main #footer .text {
@@ -99,6 +104,8 @@
   letter-spacing: 0.05rem;
   color: #7c8ca2;
   font-weight: 300;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 #app #main #footer .copy {
@@ -106,6 +113,8 @@
   font-size: 1.3rem;
   font-family: "BebasNeue Bold", cursive;
   letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 #app #sidebar {
@@ -501,6 +510,12 @@ input:-webkit-autofill:focus {
   overflow: hidden;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #hero {
+    height: 50vh;
+  }
+}
+
 #hero .banner {
   width: 100%;
   height: 100%;
@@ -561,10 +576,25 @@ input:-webkit-autofill:focus {
   line-height: 1.1;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #section .stitle {
+    margin: 2rem 0;
+    font-size: 3.2rem;
+  }
+}
+
 #latest {
   gap: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #latest {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 #cat {
@@ -883,9 +913,26 @@ input:-webkit-autofill:focus {
   justify-content: center;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
 #detail .shot {
   height: 100%;
   overflow: hidden;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #detail .shot {
+    width: 100%;
+  }
 }
 
 #detail .shot .image {
@@ -906,6 +953,12 @@ input:-webkit-autofill:focus {
   transform: scale(1.2);
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #detail .shot .image {
+    width: 100%;
+  }
+}
+
 #detail .content {
   height: 100%;
   padding: 2rem;
@@ -916,6 +969,12 @@ input:-webkit-autofill:focus {
   justify-content: center;
   background-color: #000000;
   justify-content: flex-end;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #detail .content {
+    width: 100%;
+  }
 }
 
 #detail .content .genus {
@@ -960,10 +1019,11 @@ input:-webkit-autofill:focus {
 }
 
 #detail-cta {
-  margin-top: 1rem;
+  margin-top: 3rem;
   gap: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 
 #detail-cta .share {
@@ -995,6 +1055,13 @@ input:-webkit-autofill:focus {
 }
 
 #detail-cta .date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#detail-cta .date .posted {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Lato", sans-serif;

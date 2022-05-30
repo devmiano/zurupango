@@ -6,9 +6,19 @@
 	height: 100vh;
 	@include row-center;
 
+	@include for-tab {
+		@include col-start;
+		width: 100%;
+		height: auto;
+	}
+
 	.shot {
 		height: 100%;
 		overflow: hidden;
+
+		@include for-tab {
+			width: 100%;
+		}
 
 		.image {
 			height: 100%;
@@ -17,6 +27,10 @@
 
 			&:hover {
 				transform: scale(1.2);
+			}
+
+			@include for-tab {
+				width: 100%;
 			}
 		}
 	}
@@ -28,6 +42,10 @@
 		@include col-start;
 		background-color: $black;
 		justify-content: flex-end;
+
+		@include for-tab {
+			width: 100%;
+		}
 
 		.genus {
 			@include title;
@@ -59,8 +77,9 @@
 }
 
 #detail-cta {
-	margin-top: 1rem;
+	margin-top: 3rem;
 	@include grid-three;
+	width: 100%;
 
 	.share {
 		@include btn-alt;
@@ -72,9 +91,12 @@
 	}
 
 	.date {
-		@include text;
-		color: $ash-200;
-		font-weight: 300;
+		@include col-start;
+		.posted {
+			@include text;
+			color: $ash-200;
+			font-weight: 300;
+		}
 	}
 }
 
@@ -82,7 +104,3 @@
 //     visibility: visible;
 //     transform: translate(1480px, 356px);
 // }
-
-
-
-

@@ -33,10 +33,10 @@
 	justify-content: flex-start;
 }
 
-@mixin grid-column {
+@mixin grid-one {
 	gap: 1rem;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 
 @mixin grid-two {
@@ -191,4 +191,20 @@
 	100% {
 		background-image: url('images/hero-cheetah-one.png');
 	}
+}
+
+// Mixins
+
+// Tablet
+@mixin for-tab {
+  @media screen and (min-width: 0px) and(max-width: 768px) {
+    @content;
+  }
+}
+
+// Desktop
+@mixin for-desktop {
+  @media screen and (min-width: 769px) and (max-width: 4000px) {
+    @content;
+  }
 }

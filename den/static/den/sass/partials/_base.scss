@@ -7,7 +7,6 @@
 	display: flex;
 	flex-direction: row;
 
-
 	#navbrand {
 		top: 0;
 		z-index: 100;
@@ -29,24 +28,29 @@
 		flex-direction: column;
 
 		#footer {
-			gap: 1rem;
+			gap: 0.5rem;
 			width: 100%;
-			height: 5rem;
-			padding: 1rem;
 			margin-top: auto;
-			@include row-center;
-			background-color: $black;
-			justify-content: space-between;
+			@include grid-three;
+
+			@include for-tab {
+				@include col-center;
+				gap: 0rem;
+			}
 
 			.text {
 				@include text;
 				color: $ash-500;
 				font-weight: 300;
+				padding: 0.5rem;
+				text-align: center;
 			}
 			.copy {
 				color: $white;
 				font-size: 1.3rem;
 				@include brandtext;
+				padding: 0.5rem;
+				text-align: center;
 			}
 		}
 	}
