@@ -1,0 +1,222 @@
+@mixin row-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin col-center {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@mixin row-between {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@mixin col-start {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+@mixin row-start {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+@mixin grid-one {
+	gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+@mixin grid-two {
+	gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+@mixin grid-three {
+	gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+@mixin grid-four {
+	gap: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@mixin title {
+	line-height: 1;
+	font-size: 3.2rem;
+	font-family: $bold;
+	letter-spacing: 0.2rem;
+}
+
+@mixin subtitle {
+	font-size: 1.7rem;
+	font-family: $light;
+	letter-spacing: 0.2rem;
+}
+
+@mixin subtext {
+	line-height: 1;
+	font-size: 1.3rem;
+	font-family: $bold;
+	letter-spacing: 0.05rem;
+}
+
+@mixin text {
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: $lato;
+	letter-spacing: 0.05rem;
+}
+
+@mixin brandtext {
+	font-family: $bold;
+	letter-spacing: 0.1rem;
+}
+@mixin link {
+	text-decoration: none;
+}
+@mixin input {
+	outline: none;
+	color: $black;
+	font-size: 1rem;
+	margin: 0.5rem 0;
+	padding: 0.4rem 0.8rem;
+	background: transparent;
+	border: 2px solid $black;
+	text-transform: uppercase;
+
+	&::placeholder {
+		color: $black;
+		background: transparent;
+	}
+	&:focus {
+		color: $black;
+		background: transparent;
+	}
+	&:active {
+		color: $black;
+		background: transparent;
+	}
+	&:focus-visible {
+		color: $black;
+		background: transparent;
+	}
+}
+
+@mixin btn {
+	border: none;
+	outline: none;
+	color: $white;
+	cursor: pointer;
+	background: $black;
+	border-radius: 0rem;
+	letter-spacing: 0.1rem;
+	padding: 0.4rem 0.8rem;
+	text-transform: uppercase;
+
+	&:hover {
+		color: $black;
+		background: $white;
+		border: 2px solid $black;
+	}
+}
+@mixin btn-alt {
+	color: $white;
+	outline: none;
+	cursor: pointer;
+	font-size: 0.8rem;
+	text-decoration: none;
+	padding: 0.7rem 1rem;
+	letter-spacing: 0.2rem;
+	background: transparent;
+	text-transform: uppercase;
+	border: 2px solid $white;
+
+	&:hover {
+		color: $black;
+		background: $white;
+	}
+}
+
+@mixin image {
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+@mixin hero-image {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@mixin date {
+	font-weight: 300;
+	font-size: 0.7rem;
+	font-family: $lato;
+}
+
+@mixin gray-grow {
+	filter: grayscale(1);
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		filter: grayscale(0);
+		background-size: 110%;
+	}
+}
+@mixin hero-gray-grow {
+	filter: grayscale(1);
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		filter: grayscale(0);
+		transform: scale(1.1);
+	}
+}
+
+@keyframes hero {
+	0% {
+		background-image: url('images/hero-leopard.png');
+	}
+	25% {
+		background-image: url('images/hero-lion.png');
+	}
+	50% {
+		background-image: url('images/hero-cheetah.png');
+	}
+	75% {
+		background-image: url('images/hero-lion-one.png');
+	}
+	100% {
+		background-image: url('images/hero-cheetah-one.png');
+	}
+}
+
+// Mixins
+
+// Tablet
+@mixin for-tab {
+	@media screen and (min-width: 0px) and(max-width: 768px) {
+		@content;
+	}
+}
+
+// Desktop
+@mixin for-desktop {
+	@media screen and (min-width: 769px) and (max-width: 4000px) {
+		@content;
+	}
+}

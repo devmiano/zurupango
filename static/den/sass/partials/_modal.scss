@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'mixins';
+@import 'palette';
+
+.cat-modal {
+	padding: 1rem;
+	border-radius: 0px;
+	background-color: $black;
+	box-shadow: 0px 0px 50px 0px rgba(17, 20, 24, 1);
+
+	a.close-modal {
+		background-image: url('icons/close.svg');
+	}
+}
