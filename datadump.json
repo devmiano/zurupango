@@ -1,0 +1,1183 @@
+[
+{
+    "model": "den.location",
+    "pk": 1,
+    "fields": {
+        "url": "maasai-mara",
+        "title": "Maasai Mara National Park"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 2,
+    "fields": {
+        "url": "tsavo",
+        "title": "Tsavo National Park"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 3,
+    "fields": {
+        "url": "aberdare",
+        "title": "Aberdare National Park"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 4,
+    "fields": {
+        "url": "lewa",
+        "title": "Lewa Conservancy"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 5,
+    "fields": {
+        "url": "mt-kenya",
+        "title": "Mt. Kenya National Park"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 6,
+    "fields": {
+        "url": "amboseli",
+        "title": "Amboseli National Park"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 7,
+    "fields": {
+        "url": "kora",
+        "title": "Kora National Park"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 8,
+    "fields": {
+        "url": "serengeti",
+        "title": "Serengeti National Park"
+    }
+},
+{
+    "model": "den.location",
+    "pk": 9,
+    "fields": {
+        "url": "kruger",
+        "title": "Kruger National Park"
+    }
+},
+{
+    "model": "den.category",
+    "pk": 1,
+    "fields": {
+        "image": "category/category-cheetah.png",
+        "url": "cheetahs",
+        "title": "Cheetah",
+        "genus": "Acinonyx Jubatus",
+        "caption": "Native to Africa and central Iran, this cat is the fastest land animal. Estimated to be capable of running at 80 to 128 km/h. The cheetah has several built in adaptations for its massive speed, including a light build, long thin legs and a long tail. Cheetahs cohabit together in three groups: Females and their cubs, Male \"coalitions\", and Solitary males."
+    }
+},
+{
+    "model": "den.category",
+    "pk": 2,
+    "fields": {
+        "image": "category/category-leopard.png",
+        "url": "leopards",
+        "title": "Leopard",
+        "genus": "Panthera Pardus",
+        "caption": "The leopard is distinguished by its well-camouflaged fur, opportunistic hunting behavior, broad diet, strength, and its ability to adapt to different habitats. They have relatively short legs, a long body with a large skull. Leopards are smaller, have lighter physique, and the fur is marked with rosettes that are smaller, densely packed and without central spots."
+    }
+},
+{
+    "model": "den.category",
+    "pk": 3,
+    "fields": {
+        "image": "category/category-lion.png",
+        "url": "lions",
+        "title": "Lion",
+        "genus": "Panthera Leo",
+        "caption": "Native to Africa and India. Muscular, broad-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail, the lion is an apex and keystone predator. Being sexually dimorphic, male lions are larger than females and exhibiting a prominent mane. Lions are social species, forming prides. Groups of female lions usually hunt together."
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 1,
+    "fields": {
+        "image": "cats/cheetah-1.png",
+        "title": "Time to wake up find breakfast",
+        "caption": "A cheetah seemingly just woke and hoping to find his next meal after cleaning himself up using his paws.",
+        "posted": "2022-05-27T23:01:38Z",
+        "category": 1,
+        "location": 1
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 2,
+    "fields": {
+        "image": "cats/leopard-1.png",
+        "title": "Check out my Cave",
+        "caption": "This leopard is quite content in his cave as the sun comes up. Its quite rare to capture leopards in their natural habitat since they are quite good at hiding.",
+        "posted": "2022-05-27T23:04:31Z",
+        "category": 2,
+        "location": 5
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 3,
+    "fields": {
+        "image": "cats/lion-1.png",
+        "title": "Keep close Kid",
+        "caption": "The cub is being baby sat by its father most likely after the lionesses have gone hunting.",
+        "posted": "2022-05-27T23:06:35Z",
+        "category": 3,
+        "location": 4
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 4,
+    "fields": {
+        "image": "cats/leopard-7.png",
+        "title": "This is my Territory",
+        "caption": "These two leopards are engaged in a battle for their territory. Most often than not they one will surrender and if that does not happen then death is inevitable.",
+        "posted": "2022-05-27T23:08:24Z",
+        "category": 2,
+        "location": 3
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 5,
+    "fields": {
+        "image": "cats/cheetah-6.png",
+        "title": "Whose Absent?",
+        "caption": "They seem ready to pounce on their favorite meal. Perhaps the Gazelle or the Impala",
+        "posted": "2022-05-28T05:04:38Z",
+        "category": 1,
+        "location": 6
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 6,
+    "fields": {
+        "image": "cats/leopard-5.png",
+        "title": "Power Nap",
+        "caption": "Leopards like sleeping very up in the trees where their rival cats like the lion cannot reach",
+        "posted": "2022-05-28T05:06:17Z",
+        "category": 2,
+        "location": 7
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 7,
+    "fields": {
+        "image": "cats/lion-2.png",
+        "title": "I bite too!!",
+        "caption": "This cub is showing off its teeth which look menacing even at this young age",
+        "posted": "2022-05-28T05:07:32Z",
+        "category": 3,
+        "location": 9
+    }
+},
+{
+    "model": "den.cat",
+    "pk": 8,
+    "fields": {
+        "image": "cats/leopard-6.png",
+        "title": "I can still taste my Prey",
+        "caption": "This leopard licks his face a sign of having recently fed on something",
+        "posted": "2022-05-28T05:09:20Z",
+        "category": 2,
+        "location": 9
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "den",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "den",
+        "model": "location"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "den",
+        "model": "cat"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8qnrwuy12fugj8ouleo6bq1faiow07vk",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSFYzC9lep8BLbAEJxGWjF1FuXtsyUXSzsx7bxZwW2vYOi1hyuzKJLv8sojpSe0Q-YHtPvM0t3WZIj8SftrOxznT63a2fwcVe93XoNEUh14l7QZvQZWSjFRWaLEjktl5ysIWQxoLFGsJhMwSoh6iB1Ds8wXQBjdJ:1nuh73:YV639BvFwXsFtZQEQtfFWMCt1dFlFqrQdIufo5edUmA",
+        "expire_date": "2022-06-10T21:03:13.641Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add Category List",
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change Category List",
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete Category List",
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view Category List",
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add location",
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "codename": "add_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change location",
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "codename": "change_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete location",
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "codename": "delete_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view location",
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "codename": "view_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add cat",
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "codename": "add_cat"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change cat",
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "codename": "change_cat"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete cat",
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "codename": "delete_cat"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view cat",
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "codename": "view_cat"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$U91lZ9vq0NQ9AJyvGziQ4f$D3/q8tK1dwfeO+91fbRlf8ZEmhpBk0X/6ynVMVlW2bg=",
+        "last_login": "2022-05-27T21:03:13.637Z",
+        "is_superuser": true,
+        "username": "miano",
+        "first_name": "",
+        "last_name": "",
+        "email": "dev.miano@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-27T21:03:00.289Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-05-27T21:19:41.898Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Cheetah",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-05-27T21:20:29.170Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Leopard",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-05-27T21:21:02.798Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Lion",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-05-27T21:21:38.536Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "1",
+        "object_repr": "Maasai Mara National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-05-27T21:21:51.549Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "2",
+        "object_repr": "Tsavo National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-05-27T21:22:04.399Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "3",
+        "object_repr": "Aberdare National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-05-27T21:22:15.453Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "4",
+        "object_repr": "Lewa Conservancy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-05-27T21:22:37.233Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "5",
+        "object_repr": "Mt. Kenya National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-05-27T21:22:57.200Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "6",
+        "object_repr": "Amboseli National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-05-27T21:23:42.878Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "7",
+        "object_repr": "Kora National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-05-27T21:24:17.779Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "8",
+        "object_repr": "Serengeti National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-05-27T21:24:38.212Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "location"
+        ],
+        "object_id": "9",
+        "object_repr": "Kruger National Park",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-05-27T23:04:31.059Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "1",
+        "object_repr": "Time to wake up find breakfast",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-05-27T23:06:34.894Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "2",
+        "object_repr": "Check out my Cave",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-05-27T23:08:24.028Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "3",
+        "object_repr": "Keep close Kid",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2022-05-27T23:11:03.416Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "4",
+        "object_repr": "This is my Territory",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2022-05-28T00:41:02.616Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Lion",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2022-05-28T00:41:07.786Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Lion",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2022-05-28T00:41:15.830Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Leopard",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2022-05-28T00:41:25.994Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Cheetah",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Caption\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2022-05-28T05:03:11.807Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "1",
+        "object_repr": "Time to wake up find breakfast",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2022-05-28T05:06:17.071Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "5",
+        "object_repr": "Whose Absent?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2022-05-28T05:07:32.414Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "6",
+        "object_repr": "Power Nap",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2022-05-28T05:09:20.018Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "7",
+        "object_repr": "I bite too!!",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2022-05-28T05:11:51.145Z",
+        "user": [
+            "miano"
+        ],
+        "content_type": [
+            "den",
+            "cat"
+        ],
+        "object_id": "8",
+        "object_repr": "I can still taste my Prey",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
