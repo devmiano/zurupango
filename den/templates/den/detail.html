@@ -14,8 +14,8 @@
 		</p>
 		<div id="detail-cta">
 			<div class="date">
-				<p class="text">Date created:</p>
-				<p class="posted">{{cat.posted | date:"jS M Y"}}</p>
+				<p class="text">Created:</p>
+				<p class="posted">{{cat.posted | timesince}} ago</p>
 			</div>
 			<button id="copyLink" onclick="share('share')" class="share">
 				Copy Link

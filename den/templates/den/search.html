@@ -1,15 +1,16 @@
 {% extends 'den/base.html' %} {% block content %}
 <div class="results">
-  {% if searched_cats %}
-  <h2 class="message">Found {{searched_cats | length}} cats</h2>
-  {% else %}
-  <h2 class="message">Found 0 cats</h2>
-  {% endif %}
+	{% if searched_cats.count == 1 %}
+	<h2 class="message">Found {{searched_cats | length}} cat</h2>
+	{% elif searched_cats.count > 1 %}
+	<h2 class="message">Found {{searched_cats | length}} cats</h2>
+	{% else %}
+	<h2 class="message">Found no cat</h2>
+	{% endif %}
 </div>
 <section id="section">
 	<h1 class="stitle">You searched for {{title}}</h1>
-	{% if searched_cats %}
-	{% include 'den/cats.html' with cats=searched_cats %}
+	{% if searched_cats %} {% include 'den/cats.html' with cats=searched_cats %}
 	{% else %}
 	<p>No big cats available</p>
 	{% endif %}

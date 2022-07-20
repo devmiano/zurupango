@@ -1,7 +1,11 @@
 {% extends 'den/base.html' %} {% block content %}
 <section id="detail">
 	<div class="shot">
-		<img class="image" src="{{category.image.url}}" alt="{{category.title}}" />
+		<img
+			class="image"
+			src="https://res.cloudinary.com/devmiano/{{category.image}}"
+			alt="{{category.title}}"
+		/>
 	</div>
 
 	<div class="content">
@@ -12,9 +16,7 @@
 </section>
 <section id="section">
 	<h1 class="stitle">{{category.title}} shots</h1>
-	{% if cats %}
-	{% include 'den/cats.html' with cats=cats %}
-	{% else %}
+	{% if cats %} {% include 'den/cats.html' with cats=cats %} {% else %}
 	<p>No big cats available</p>
 	{% endif %}
 </section>

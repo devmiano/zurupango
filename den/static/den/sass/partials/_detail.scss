@@ -39,7 +39,7 @@
 	.content {
 		height: 100%;
 		padding: 2rem;
-		width: 40%;
+		width: 50%;
 		@include col-start;
 		background-color: $black;
 		justify-content: flex-end;
@@ -57,7 +57,7 @@
 		.location {
 			font-size: 1rem;
 			@include subtitle;
-			margin-bottom: 5rem;
+			margin-bottom: 3rem;
 		}
 		.title {
 			@include title;
@@ -78,7 +78,7 @@
 }
 
 #detail-cta {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	@include grid-three;
 	width: 100%;
 

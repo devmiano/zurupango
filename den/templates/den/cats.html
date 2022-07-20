@@ -2,7 +2,11 @@
 	{% for cat in cats %}
 	<a href="#{{cat.id}}" id="cat" rel="modal:open">
 		<div class="wrapper">
-			<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
+			<img
+				class="image"
+				src="https://res.cloudinary.com/devmiano/{{cat.image}}"
+				alt="{{cat.title}}"
+			/>
 		</div>
 		<div class="content">
 			<div class="top">
@@ -15,7 +19,11 @@
 	<div id="{{cat.id}}" class="modal cat-modal">
 		<a id="cat" href="{% url 'detail' cat.category.url cat.id %}">
 			<div class="wrapper">
-				<img class="image" src="{{cat.image.url}}" alt="{{cat.title}}" />
+				<img
+					class="image"
+					src="https://res.cloudinary.com/devmiano/{{cat.image}}"
+					alt="{{cat.title}}"
+				/>
 			</div>
 			<div class="content">
 				<div class="top">
@@ -26,7 +34,9 @@
 			</div>
 		</a>
 		<div id="cta">
-			<a class="share" href="{% url 'detail' cat.category.url cat.id %}">Details</a>
+			<a class="share" href="{% url 'detail' cat.category.url cat.id %}"
+				>Details</a
+			>
 			<a class="close" href="#" rel="modal:close">Close</a>
 		</div>
 	</div>
