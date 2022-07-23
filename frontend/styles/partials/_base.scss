@@ -1,161 +1,165 @@
-@import 'mixins';
-@import 'palette';
-@import 'fonts';
+@import "mixins";
+@import "palette";
+@import "fonts";
 
 #app {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
-	#navbrand {
-		top: 0;
-		z-index: 100;
-		height: 4rem;
-		padding: 1rem;
-		position: sticky;
-		width: fit-content;
+  #navbrand {
+    top: 0;
+    z-index: 100;
+    height: 4rem;
+    padding: 1rem;
+    position: sticky;
+    width: fit-content;
 
-		.logo {
-			height: 5rem;
-		}
-	}
+    .logo {
+      height: 5rem;
 
-	#main {
-		width: 100%;
-		display: flex;
-		min-height: 100vh;
-		margin-top: -4rem;
-		flex-direction: column;
+      .img {
+        height: 5rem;
+      }
+    }
+  }
 
-		#footer {
-			gap: 0.5rem;
-			width: 100%;
-			margin-top: auto;
-			@include grid-three;
+  #main {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    margin-top: -4rem;
+    flex-direction: column;
 
-			@include for-tab {
-				@include col-center;
-				gap: 0rem;
-			}
+    #footer {
+      gap: 0.5rem;
+      width: 100%;
+      margin-top: auto;
+      @include grid-three;
 
-			.text {
-				@include text;
-				padding: 1rem;
-				color: $ash-500;
-				font-weight: 300;
-				text-align: center;
+      @include for-tab {
+        @include col-center;
+        gap: 0rem;
+      }
 
-				@include for-tab {
-					padding: 0.5rem 1rem;
-				}
-			}
+      .text {
+        @include text;
+        padding: 1rem;
+        color: $ash-500;
+        font-weight: 300;
+        text-align: center;
 
-			.copy {
-				color: $white;
-				padding: 1rem;
-				line-height: 1;
-				font-size: 1.3rem;
-				@include brandtext;
-				text-align: center;
+        @include for-tab {
+          padding: 0.5rem 1rem;
+        }
+      }
 
-				@include for-tab {
-					padding: 0.5rem 1rem;
-				}
-			}
-		}
-	}
+      .copy {
+        color: $white;
+        padding: 1rem;
+        line-height: 1;
+        font-size: 1.3rem;
+        @include brandtext;
+        text-align: center;
 
-	#sidebar {
-		top: 0;
-		width: 5rem;
-		z-index: 100;
-		height: 100vh;
-		color: $black;
-		cursor: pointer;
-		padding: 0.5rem;
-		position: sticky;
-		align-items: center;
-		@include col-center;
-		background-color: $white;
-		transition-duration: 0.8s;
-		transition-property: width;
-		justify-content: flex-start;
+        @include for-tab {
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
 
-		&:hover {
-			width: 10rem;
-		}
+  #sidebar {
+    top: 0;
+    width: 5rem;
+    z-index: 100;
+    height: 100vh;
+    color: $black;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: sticky;
+    align-items: center;
+    @include col-center;
+    background-color: $white;
+    transition-duration: 0.8s;
+    transition-property: width;
+    justify-content: flex-start;
 
-		.menu {
-			width: 100%;
-			padding: 0.5rem;
-			@include col-start;
+    &:hover {
+      width: 10rem;
+    }
 
-			.text {
-				font-size: 1.7rem;
-				@include brandtext;
-			}
+    .menu {
+      width: 100%;
+      padding: 0.5rem;
+      @include col-start;
 
-			.icon {
-				height: 0.4rem;
-			}
-		}
+      .text {
+        font-size: 1.7rem;
+        @include brandtext;
+      }
 
-		.links {
-			display: none;
-		}
+      .icon {
+        height: 0.4rem;
+      }
+    }
 
-		.search {
-			display: none;
-		}
+    .links {
+      display: none;
+    }
 
-		&:hover .search {
-			width: 100%;
-			padding: 0.5rem;
-			@include col-center;
+    .search {
+      display: none;
+    }
 
-			.url {
-				width: 100%;
-				@include link;
-				color: $black;
-				font-size: 1.1rem;
-				@include brandtext;
-				padding: 0.4rem 0.8rem;
+    &:hover .search {
+      width: 100%;
+      padding: 0.5rem;
+      @include col-center;
 
-				&:hover {
-					background-color: $ash-100;
-				}
-			}
+      .url {
+        width: 100%;
+        @include link;
+        color: $black;
+        font-size: 1.1rem;
+        @include brandtext;
+        padding: 0.4rem 0.8rem;
 
-			.input {
-				width: 100%;
-				@include input;
-				font-size: 0.8rem;
-			}
+        &:hover {
+          background-color: $ash-100;
+        }
+      }
 
-			.submit {
-				width: 100%;
-				@include btn;
-				font-weight: 300;
-				font-size: 0.8rem;
-			}
-		}
+      .input {
+        width: 100%;
+        @include input;
+        font-size: 0.8rem;
+      }
 
-		&:hover .links {
-			width: 100%;
-			@include col-center;
+      .submit {
+        width: 100%;
+        @include btn;
+        font-weight: 300;
+        font-size: 0.8rem;
+      }
+    }
 
-			.link {
-				width: 100%;
-				@include link;
-				color: $black;
-				font-size: 1.1rem;
-				@include brandtext;
-				padding: 0.4rem 0.8rem;
+    &:hover .links {
+      width: 100%;
+      @include col-center;
 
-				&:hover {
-					background-color: $ash-100;
-				}
-			}
-		}
-	}
+      .link {
+        width: 100%;
+        @include link;
+        color: $black;
+        font-size: 1.1rem;
+        @include brandtext;
+        padding: 0.4rem 0.8rem;
+
+        &:hover {
+          background-color: $ash-100;
+        }
+      }
+    }
+  }
 }
