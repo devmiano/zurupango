@@ -15,6 +15,7 @@ django-cors-headers = "*"
 cloudinary = "*"
 python-dotenv = "*"
 django-sass = "*"
+djangorestframework = "*"
 
 [dev-packages]
 autopep8 = "*"

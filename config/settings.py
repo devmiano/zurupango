@@ -31,6 +31,7 @@ CORS_ORIGIN_WHITELIST = ('https://zurupango.herokuapp.com')
 
 
 INSTALLED_APPS = [
+    'rest_framework',
     'django_sass',
     'den',
     'django.contrib.admin',
