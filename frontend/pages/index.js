@@ -40,7 +40,7 @@ export default function Home({ cats }) {
 }
 
 export async function getServerSideProps() {
-  const res = await axios.get(`http://127.0.0.1:8000/api/cats/`);
+  const res = await axios.get(`https://zurupango.herokuapp.com/api/cats/`);
   const cats = res.data;
 
   return {
