@@ -5,9 +5,7 @@ import Image from "next/image";
 const NavBrand = () => {
   return (
     <a href="/" id="navbrand">
-      <div className="logo">
-        <Image className="img" src={logo} alt="logo" />
-      </div>
+      <Image className="logo" src={logo} alt="logo" />
     </a>
   );
 };
