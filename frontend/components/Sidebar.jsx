@@ -28,14 +28,6 @@ const Sidebar = () => {
 					search
 				</button>
 			</form>
-			<div className='links'>
-				<a href='/' className='link'>
-					category
-				</a>
-			</div>
-			<div className='links'>
-				<p>No category available</p>
-			</div>
 		</div>
 	);
 };

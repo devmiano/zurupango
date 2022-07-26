@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const CatCard = ({ cat: { id, title, image }, location, category }) => {
+const CatCard = ({ id, title, image, location, category }) => {
 	return (
 		<>
 			<a href={`#${id}`} id='cat' rel='modal:open'>
@@ -16,8 +16,8 @@ const CatCard = ({ cat: { id, title, image }, location, category }) => {
 				</div>
 				<div className='content'>
 					<div className='top'>
-						<p className='location'>{title}</p>
-						<p className='category'>{title}</p>
+						<p className='location'>{location}</p>
+						<p className='category'>{category}</p>
 					</div>
 					<h4 className='title'>{title}</h4>
 				</div>

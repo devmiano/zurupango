@@ -2,7 +2,7 @@ import axios from 'axios';
 import Head from 'next/head';
 import { CatCard } from '../components';
 
-export default function Home({ cats }) {
+export default function Home({ cats, locationData }) {
 	return (
 		<>
 			<Head>
@@ -23,7 +23,12 @@ export default function Home({ cats }) {
 				<h1 className='stitle'>Latest shots</h1>
 				<div id='latest'>
 					{cats?.map((cat) => (
-						<CatCard key={cat.id} cat={cat} />
+						<CatCard
+							key={cat.id}
+							id={cat.id}
+							image={cat.image}
+							title={cat.title}
+						/>
 					))}
 				</div>
 			</section>
@@ -34,8 +39,12 @@ export default function Home({ cats }) {
 export async function getServerSideProps() {
 	const catsRes = await axios.get(`https://zurupango.herokuapp.com/api/cats/`);
 	const cats = catsRes.data;
+	const locRes = await axios.get(
+		`https://zurupango.herokuapp.com/api/locations/`
+	);
+	const locationData = locRes.data;
 
 	return {
-		props: { cats },
+		props: { cats, locationData },
 	};
 }

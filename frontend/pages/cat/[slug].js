@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import { formatDistance } from 'date-fns';
 
 const CatDetail = ({ cat, location, category }) => {
@@ -9,7 +9,7 @@ const CatDetail = ({ cat, location, category }) => {
 
 	return (
 		<section id='detail'>
-			<div class='shot'>
+			<div className='shot'>
 				<Image
 					className='image'
 					src={`https://res.cloudinary.com/devmiano/${image}`}
@@ -18,25 +18,25 @@ const CatDetail = ({ cat, location, category }) => {
 					height={800}
 				/>
 			</div>
-			<div class='content'>
-				<h4 class='genus'>{categoryGenus}</h4>
-				<p class='location'>{locationTitle}</p>
-				<h1 class='title'>{title}</h1>
-				<p class='caption'>{caption}</p>
+			<div className='content'>
+				<h4 className='genus'>{categoryGenus}</h4>
+				<p className='location'>{locationTitle}</p>
+				<h1 className='title'>{title}</h1>
+				<p className='caption'>{caption}</p>
 				<p id='share'>{categoryTitle}</p>
 				<div id='detail-cta'>
-					<div class='date'>
-						<p class='text'>Created:</p>
-						<p class='posted'>
+					<div className='date'>
+						<p className='text'>Created:</p>
+						<p className='posted'>
 							{formatDistance(new Date(posted), new Date(), {
 								addSuffix: true,
 							})}
 						</p>
 					</div>
-					<button id='copyLink' class='share'>
+					<button id='copyLink' className='share'>
 						Copy Link
 					</button>
-					<a class='close' href='/'>
+					<a className='close' href='/'>
 						Close
 					</a>
 				</div>
