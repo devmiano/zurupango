@@ -43,8 +43,8 @@ const CatCard = ({ cat: { id, title, image, location, category } }) => {
 					</div>
 				</a>
 				<div id='cta'>
-					<Link className='share' href={`/cat/${id}`}>
-						Details
+					<Link href={`/cat/${id}`}>
+						<div className='share'>Details</div>
 					</Link>
 					<a className='close' href='#' rel='modal:close'>
 						Close

@@ -19,6 +19,13 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
     lookup_field = 'url'
 
 
+class CategoryIdView(generics.RetrieveUpdateDestroyAPIView):
+    model = Category
+    serializer_class = CategorySerializer
+    queryset = Category.objects.all()
+    lookup_field = 'url'
+
+
 class LocationListView(generics.ListCreateAPIView):
     model = Location
     serializer_class = LocationSerializer
@@ -30,6 +37,13 @@ class LocationDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = LocationSerializer
     queryset = Location.objects.all()
     lookup_field = 'url'
+
+
+class LocationIdView(generics.RetrieveUpdateDestroyAPIView):
+    model = Location
+    serializer_class = LocationSerializer
+    queryset = Location.objects.all()
+    lookup_field = 'pk'
 
 
 class CatListView(generics.ListCreateAPIView):

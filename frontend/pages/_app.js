@@ -6,7 +6,6 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
 	return (
 		<Layout>
-			<div id='cursor' />
 			<Script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js' />
 			<Script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js' />
 			<Script src='/cursor.js' />
