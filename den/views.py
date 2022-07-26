@@ -23,7 +23,7 @@ class CategoryIdView(generics.RetrieveUpdateDestroyAPIView):
     model = Category
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
-    lookup_field = 'url'
+    lookup_field = 'pk'
 
 
 class LocationListView(generics.ListCreateAPIView):
