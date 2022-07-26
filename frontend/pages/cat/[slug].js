@@ -2,8 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import { formatDistance } from 'date-fns';
 
-const CatDetail = ({ cat }) => {
-	const { category, image, title, caption, location, posted } = cat;
+const CatDetail = ({ cat, location, category }) => {
+	const { image, title, caption, posted } = cat;
+	const { title: locationTitle } = location;
+	const { title: categoryTitle, genus: categoryGenus } = category;
+
 	return (
 		<section id='detail'>
 			<div class='shot'>
@@ -16,11 +19,11 @@ const CatDetail = ({ cat }) => {
 				/>
 			</div>
 			<div class='content'>
-				<h4 class='genus'>{category}</h4>
-				<p class='location'>{location}</p>
+				<h4 class='genus'>{categoryGenus}</h4>
+				<p class='location'>{locationTitle}</p>
 				<h1 class='title'>{title}</h1>
 				<p class='caption'>{caption}</p>
-				<p id='share'>Share</p>
+				<p id='share'>{categoryTitle}</p>
 				<div id='detail-cta'>
 					<div class='date'>
 						<p class='text'>Created:</p>
@@ -59,12 +62,22 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { slug: id } }) => {
-	const res = await fetch(`https://zurupango.herokuapp.com/api/cat/${id}`);
-	const data = await res.json();
+	const catres = await fetch(`https://zurupango.herokuapp.com/api/cat/${id}`);
+	const cat = await catres.json();
+	const locationres = await fetch(
+		`https://zurupango.herokuapp.com/api/location/id/${(id = cat.location)}/`
+	);
+	const location = await locationres.json();
+	const categoryres = await fetch(
+		`https://zurupango.herokuapp.com/api/category/id/${(id = cat.category)}/`
+	);
+	const category = await categoryres.json();
 
 	return {
 		props: {
-			cat: data,
+			cat,
+			location,
+			category,
 		},
 	};
 };
